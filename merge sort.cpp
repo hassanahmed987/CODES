@@ -3,15 +3,15 @@ using namespace std;
 
 void merge(int arr[], int start, int mid, int end) {
 	//make sizes for temp arr
-    int n1 = mid - start + 1;
-    int n2 = end - mid;
+    int len1 = mid - start + 1;
+    int len2 = end - mid;
     int L[n1];
     int R[n2];
 //make temp array for left and right
-    for (int i = 0; i < n1; i++) {
+    for (int i = 0; i < len1; i++) {
         L[i] = arr[start + i];
     }
-    for (int j = 0; j < n2; j++) {
+    for (int j = 0; j < len2; j++) {
         R[j] = arr[mid + 1 + j];
     }
     // merging thing 
